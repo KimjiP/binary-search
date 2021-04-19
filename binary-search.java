@@ -13,7 +13,7 @@ public class lab1 {
     public static void main(String[] args) throws IOException {
         Random r = new Random();
         
-        FileWriter txtSaver = new FileWriter("C:\\Users\\kimji\\Documents\\NetBeansProjects\\Lab1\\numbers.txt");
+        FileWriter txtSaver = new FileWriter("\\numbers.txt");
         
         for (int i=1; i<=1000000; i++){
             try { 
@@ -27,7 +27,7 @@ public class lab1 {
                
         int[] numbers = new int[1000000];
 
-        Scanner s = new Scanner(new File("C:\\Users\\kimji\\Documents\\NetBeansProjects\\Lab1\\numbers.txt"));
+        Scanner s = new Scanner(new File("\\numbers.txt"));
         
         for (int i=0; i<numbers.length; i++){
             numbers[i] = s.nextInt();
