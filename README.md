@@ -27,6 +27,8 @@ This is to make sure that the value we are searching for is indeed found inside 
 
 A simple for loop is then used to search sequentially (i.e. from element 0 and up):
 
+<img width="244" alt="1" src="https://user-images.githubusercontent.com/22336263/115308575-35232380-a16b-11eb-893e-cdea295cbcc0.PNG">
+
 In this method, 695,958 cells had to be visited before the number 990307 was found.
 
 ### Binary Search
@@ -37,11 +39,15 @@ The algorithm starts by comparing the given integer to the middle element in the
 
 Otherwise, if the middle element is larger than the given integer, the search continues but only using the lower half of the array. This happens recursively until the desired integer is found.
 
+<img width="439" alt="2" src="https://user-images.githubusercontent.com/22336263/115308571-33f1f680-a16b-11eb-97e5-9fff3f38dc0b.PNG">
+
 In this method, it only took 17 cell visits to find the desired element.
 
 ### When Search Value is not Found
 
 Clearly, the speed problem is even more pronounced in sequential search when the integer is not found as all array elements had to be searched. In binary search, it is still faster, as shown in the result below:
+
+<img width="496" alt="3" src="https://user-images.githubusercontent.com/22336263/115308574-348a8d00-a16b-11eb-93c4-f786fe7b5274.PNG">
 
 This result can be seen as worst-case scenario for binary search as it finished the search process without any result. Still, it only took 19 cell visits to find out that the value we are looking for is not in the array.
 
