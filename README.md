@@ -10,15 +10,15 @@ b) perform a binary search to find a given integer.
 
 In both approaches, each time you visit a cell, write the corresponding integer on screen, and also count the total number of visited cells. Justify your findings.
 
-## Solution
+### Solution
 
-## Creating, Saving, and Reading Integer Values on a Text File
+### Creating, Saving, and Reading Integer Values on a Text File
 
 • A FileWriter class is used to create a text file.
 • A for loop with condition i<=1000000 is used to keep adding random integers using java.util.Random class. Since the text file cannot have integer values equal to zero, r.nextInt(1000000)+1 command is used.
 • A java.util.Scanner class is used to read integer values from the text file.
 
-## Sequential Search
+### Sequential Search
 
 To perform sequential search on an array containing 1,000,000 integer values, the same Random class is first used to generate a random element number:
 int searchFor = numbers[r.nextInt(1000000)];
@@ -29,7 +29,7 @@ A simple for loop is then used to search sequentially (i.e. from element 0 and u
 
 In this method, 695,958 cells had to be visited before the number 990307 was found.
 
-## Binary Search
+### Binary Search
 
 Binary search uses a divide and conquer algorithm, under the condition that the array is sorted from lowest to highest value. For each unsuccessful search, half of the information available is rejected so that for the successive steps, the amount of data is reduced, thereby increasing the search speed.
 
@@ -39,7 +39,7 @@ Otherwise, if the middle element is larger than the given integer, the search co
 
 In this method, it only took 17 cell visits to find the desired element.
 
-## When Search Value is not Found
+### When Search Value is not Found
 
 Clearly, the speed problem is even more pronounced in sequential search when the integer is not found as all array elements had to be searched. In binary search, it is still faster, as shown in the result below:
 
