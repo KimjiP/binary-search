@@ -47,4 +47,5 @@ This result can be seen as worst-case scenario for binary search as it finished 
 
 ## Conclusion
 • Binary search is significantly faster than sequential search
+
 • Even for worst case scenario where the search returns nothing, binary search is still better
